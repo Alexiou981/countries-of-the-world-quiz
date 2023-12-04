@@ -44,7 +44,7 @@ html {
   #main-game-area{
     display: flex;
     position: relative;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, .3);
     width: 80vw;
     height: 20vh;
     padding: 50px, 0;
