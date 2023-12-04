@@ -57,3 +57,12 @@ html {
     justify-content: space-evenly;
     flex-grow: 1;
   }
+
+  .player-score-area {
+    width: 70vw;
+    position: relative;
+    font-size: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
