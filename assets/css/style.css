@@ -18,6 +18,10 @@ html {
     font-family: Permanent Marker, sans-serif;
   }
 
+  #gameplay-area {
+    display: none;
+  }
+
   #flag-container {
     height: 50vh;
     width: 100%;
