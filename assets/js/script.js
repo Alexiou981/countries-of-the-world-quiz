@@ -1,14 +1,6 @@
-function showChoices() {
-    var startBtn = document.getElementById("gameplay-area");
-    startBtn.addEventListener('click', () => {
-        startBtn.style.display = "none";
+function hideBtn() {
+    var startBtn = document.getElementById("start-game-btn");
+    startBtn.addEventListener("click", () => {
+        startBtn.style.display="none";
     })
-    if (startBtn.style.display === "none") {
-      startBtn.style.display = "block";
-    } else {
-      startBtn.style.display = "none";
-    }
-} 
-
-
-  
+};
