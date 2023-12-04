@@ -6,11 +6,33 @@ html {
     background-color: #717957;
   }
   
-  
+  header {
+    font-size: 100%;
+  }
+
   header, main {
     display: flex;
     flex-direction: column;
     flex-wrap: no-wrap;
     align-items: center;
     font-family: Permanent Marker, sans-serif;
+  }
+
+  #flag-container {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-top: -35px;
+  }
+  #country-flag {
+    background-image: url("../images/earth-flag.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    position: relative;
+    width: 100vw;
+    margin: 5% 9%;
+    height: 50vh; 
   }
