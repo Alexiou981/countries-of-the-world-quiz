@@ -1,8 +1,14 @@
 function showChoices() {
-    var x = document.getElementById("gameplay-area");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+    var startBtn = document.getElementById("gameplay-area");
+    startBtn.addEventListener('click', () => {
+        startBtn.style.display = "none";
+    })
+    if (startBtn.style.display === "none") {
+      startBtn.style.display = "block";
     } else {
-      x.style.display = "none";
+      startBtn.style.display = "none";
     }
-  }
+} 
+
+
+  
