@@ -46,6 +46,11 @@ html {
     margin: 5% 0;
   }
 
+  p {
+    font-size: 80%;
+    text-align: center;
+  }
+
   #main-game-area{
     display: flex;
     position: relative;
