@@ -40,10 +40,18 @@ html {
     min-height: 40vh; 
   }
 
+  #random-flag {
+    display: none
+  }
+
 
   .start-game-btn {
     position: relative;
     margin: 5% 0;
+  }
+
+  #next-flag-btn {
+    display: none;
   }
 
   p {
