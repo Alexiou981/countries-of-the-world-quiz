@@ -6,3 +6,5 @@ function startGame() {
         document.getElementById("landing-flag").style.display = "none";
     })
 };
+
+const imgFlags = ["algeria.gif", "argentina.gif", "australia.gif", "bahamas.gif", "bangladesh.gif", "belgium.gif"];
