@@ -23,7 +23,7 @@ html {
   }
 
   #flag-container {
-    height: 50vh;
+    height: 45vh;
     width: 100%;
     display: flex;
     position: relative;
@@ -41,7 +41,12 @@ html {
   }
 
   #random-flag {
-    display: none
+    display: none;
+    object-fit: cover;
+    object-position: center;
+    width: 90vw;
+    margin: auto;
+    min-height: 0vh;
   }
 
 
