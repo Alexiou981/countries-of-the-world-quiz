@@ -3,5 +3,6 @@ function startGame() {
     startBtn.addEventListener("click", () => {
         startBtn.style.display = "none";
         document.getElementById("gameplay-area").style.display = "block";
+        document.getElementById("landing-flag").style.display = "none";
     })
 };
