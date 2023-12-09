@@ -10,6 +10,6 @@ function startGame() {
 };
 const countryFlag = document.getElementById("random-flag");
 
-const imgFlags = ["/assets/images/flags/algeria.gif", "argentina.gif", "australia.gif", "bahamas.gif", "bangladesh.gif", "belgium.gif"];
+const imgFlags = ["assets/images/flags/algeria.gif", "argentina.gif", "australia.gif", "bahamas.gif", "bangladesh.gif", "belgium.gif"];
 
 countryFlag.src = imgFlags[0];
