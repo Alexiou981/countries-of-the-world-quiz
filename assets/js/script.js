@@ -4,6 +4,7 @@ function startGame() {
         startBtn.style.display = "none";
         document.getElementById("gameplay-area").style.display = "block";
         document.getElementById("landing-flag").style.display = "none";
+        document.getElementById("next-flag-btn").style.display = "block";
     })
 };
 
