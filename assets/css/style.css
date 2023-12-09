@@ -28,7 +28,7 @@ html {
     display: flex;
     position: relative;
   }
-  #country-flag {
+  #landing-flag {
     background-image: url("../images/earth-flag.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
