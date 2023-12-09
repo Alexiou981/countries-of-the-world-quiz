@@ -5,7 +5,11 @@ function startGame() {
         document.getElementById("gameplay-area").style.display = "block";
         document.getElementById("landing-flag").style.display = "none";
         document.getElementById("next-flag-btn").style.display = "block";
+        document.getElementById("random-flag").style.display = "block";
     })
 };
+const countryFlag = document.getElementById("random-flag");
 
-const imgFlags = ["algeria.gif", "argentina.gif", "australia.gif", "bahamas.gif", "bangladesh.gif", "belgium.gif"];
+const imgFlags = ["/assets/images/flags/algeria.gif", "argentina.gif", "australia.gif", "bahamas.gif", "bangladesh.gif", "belgium.gif"];
+
+countryFlag.src = imgFlags[0];
