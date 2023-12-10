@@ -7,7 +7,7 @@ function startGame() {
         document.getElementById("next-flag-btn").style.display = "block";
         document.getElementById("random-flag").style.display = "block";
 
-        const randomImage = Math.floor(Math.random()*imgFlags.length);
+        const randomImage = Math.floor(Math.random() * imgFlags.length);
         countryFlag.src = imgFlags[randomImage];
         localStorage.setItem('flag', randomImage);
     })
@@ -15,4 +15,10 @@ function startGame() {
 const countryFlag = document.getElementById("random-flag");
 
 const imgFlags = ["assets/images/flags/algeria.png", "assets/images/flags/argentina.png", "assets/images/flags/australia.png", "assets/images/flags/bahamas.png", "assets/images/flags/bangadesh.png", "assets/images/flags/belgium.png"];
+
+function nextCountryFlag() {
+    const randomImage = Math.floor(Math.random() * imgFlags.length);
+    countryFlag.src = imgFlags[randomImage];
+    localStorage.setItem('flag', randomImage);
+}
 
