@@ -9,8 +9,10 @@ function startGame() {
 
         const randomImage = Math.floor(Math.random()*imgFlags.length);
         countryFlag.src = imgFlags[randomImage];
+        localStorage.setItem('flag', randomImage);
     })
 };
 const countryFlag = document.getElementById("random-flag");
 
-const imgFlags = ["assets/images/flags/algeria.gif", "assets/images/flags/argentina.gif", "assets/images/flags/australia.gif", "assets/images/flags/bahamas.gif", "assets/images/flags/bangladesh.gif", "assets/images/flags/belgium.gif"];
+const imgFlags = ["assets/images/flags/algeria.png", "assets/images/flags/argentina.png", "assets/images/flags/australia.png", "assets/images/flags/bahamas.png", "assets/images/flags/bangadesh.png", "assets/images/flags/belgium.png"];
+
