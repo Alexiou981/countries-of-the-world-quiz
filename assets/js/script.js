@@ -19,9 +19,19 @@ const imgFlags = ["assets/images/flags/algeria.png", "assets/images/flags/argent
 function nextCountryFlag() {
     var nextBtn = document.getElementById("next-flag-btn");
     nextBtn.addEventListener("click", () => {
+
         const nextRandomImage = Math.floor(Math.random() * imgFlags.length);
+
+        if (nextRandomImage !== Number(localStorage.getItem("flag"))) {
+
         countryFlag.src = imgFlags[nextRandomImage];
-        localStorage.setItem('flag', nextRandomImage);
+
+        localStorage.setItem("flag", nextRandomImage);
+
+        } else {
+            nextCountryFlag();
+        }
+
     })
 
 };
