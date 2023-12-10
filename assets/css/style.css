@@ -46,7 +46,7 @@ html {
     object-position: center;
     width: 90vw;
     margin: auto;
-    min-height: 0vh;
+    max-height: 40vh;
   }
 
 
