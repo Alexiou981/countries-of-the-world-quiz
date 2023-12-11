@@ -4,6 +4,7 @@ const countryFlag = document.getElementById("random-flag");
 
 const imgFlags = ["assets/images/flags/algeria.png", "assets/images/flags/argentina.png", "assets/images/flags/australia.png", "assets/images/flags/bahamas.png", "assets/images/flags/bangadesh.png", "assets/images/flags/belgium.png"];
 
+questionCounter = 1;
 
 function startGame() {
     var startBtn = document.getElementById("start-game-btn");
@@ -21,24 +22,33 @@ function startGame() {
 };
 
 function nextCountryFlag() {
-    
+    updateDisplay(questionCounter++);
 
     var nextBtn = document.getElementById("next-flag-btn");
     nextBtn.addEventListener("click", () => {
 
-        const nextRandomImage = Math.floor(Math.random() * imgFlags.length);
+        randomFlagPicker();
 
-        if (nextRandomImage !== Number(localStorage.getItem("flag"))) {
+        function randomFlagPicker() {
 
-        countryFlag.src = imgFlags[nextRandomImage];
+            const nextRandomImage = Math.floor(Math.random() * imgFlags.length);
 
-        localStorage.setItem("flag", nextRandomImage);
+            if (nextRandomImage !== Number(localStorage.getItem("flag"))) {
 
-        } else {
-            nextCountryFlag();
+                countryFlag.src = imgFlags[nextRandomImage];
+
+                localStorage.setItem("flag", nextRandomImage);
+
+            } else {
+                randomFlagPicker();
+            }
         }
-
     })
-
 };
+
+function updateDisplay() {
+    document.getElementById("question-counter").innerHTML = questionCounter;
+}
+
+console.log(questionCounter);
 
