@@ -1,3 +1,10 @@
+
+
+const countryFlag = document.getElementById("random-flag");
+
+const imgFlags = ["assets/images/flags/algeria.png", "assets/images/flags/argentina.png", "assets/images/flags/australia.png", "assets/images/flags/bahamas.png", "assets/images/flags/bangadesh.png", "assets/images/flags/belgium.png"];
+
+
 function startGame() {
     var startBtn = document.getElementById("start-game-btn");
     startBtn.addEventListener("click", () => {
@@ -12,9 +19,6 @@ function startGame() {
         localStorage.setItem('flag', randomImage);
     })
 };
-const countryFlag = document.getElementById("random-flag");
-
-const imgFlags = ["assets/images/flags/algeria.png", "assets/images/flags/argentina.png", "assets/images/flags/australia.png", "assets/images/flags/bahamas.png", "assets/images/flags/bangadesh.png", "assets/images/flags/belgium.png"];
 
 function nextCountryFlag() {
     
