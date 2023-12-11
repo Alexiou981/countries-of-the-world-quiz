@@ -38,13 +38,14 @@ function startGame() {
         document.getElementById("next-flag-btn").style.display = "block";
         document.getElementById("random-flag").style.display = "block";
 
-        const randomImage = Math.floor(Math.random() * imgFlags.length);
-        countryFlag.src = imgFlags[randomImage];
-        localStorage.setItem('flag', randomImage);
+        const randomImg = Math.floor(Math.random() * imgFlags.length);
+        countryFlag.src = imgFlags[randomImg];
+        console.log(randomImg);
     })
 };
 
 function nextQuestion() {
+    chooseFlag() 
     questionCounter++;
     if (questionCounter < 10) {
         updateDisplay();
@@ -56,6 +57,12 @@ function nextQuestion() {
 
 function updateDisplay() {
     document.getElementById("question-counter").innerHTML = questionCounter;
+}
+
+function chooseFlag() {
+    const randomImg = Math.floor(Math.random() * imgFlags.length);
+    countryFlag.src = imgFlags[randomImg];
+    console.log(randomImg);
 }
 
 
