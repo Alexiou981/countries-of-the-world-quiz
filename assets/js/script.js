@@ -4,28 +4,28 @@ const countryFlag = document.getElementById("random-flag");
 
 const imgFlags = [];
 
-imgFlags.push(["assets/images/flags/algeria.png", "Algeria"]);
-imgFlags.push(["assets/images/flags/argentina.png", "Argentina"]);
-imgFlags.push(["assets/images/flags/australia.png", "Australia"]);
-imgFlags.push(["assets/images/flags/bahamas.png", "Bahamas"]);
-imgFlags.push(["assets/images/flags/bangadesh.png", "Bangladesh"]);
-imgFlags.push(["assets/images/flags/belgium.png", "Belgium"]);
-imgFlags.push(["assets/images/flags/belize.png", "Belize"]);
-imgFlags.push(["assets/images/flags/bolivia.png", "Bolivia"]);
-imgFlags.push(["assets/images/flags/brazil.png", "Brazil"]);
-imgFlags.push(["assets/images/flags/bulgaria.png", "Bulgaria"]);
-imgFlags.push(["assets/images/flags/cambodia.png", "Cambodia"]);
-imgFlags.push(["assets/images/flags/cameroon.png", "Cameroon"]);
-imgFlags.push(["assets/images/flags/chile.png", "Chile"]);
-imgFlags.push(["assets/images/flags/colombia.png", "Colombia"]);
-imgFlags.push(["assets/images/flags/costa-rica.png", "Costa-Rica"]);
-imgFlags.push(["assets/images/flags/cuba.png", "Cuba"]);
-imgFlags.push(["assets/images/flags/finland.png", "Finland"]);
-imgFlags.push(["assets/images/flags/germany.png", "Germany"]);
-imgFlags.push(["assets/images/flags/greece.png", "Greece"]);
-imgFlags.push(["assets/images/flags/india.png", "India"]);
+imgFlags.push("assets/images/flags/algeria.png");
+imgFlags.push("assets/images/flags/argentina.png");
+imgFlags.push("assets/images/flags/australia.png");
+imgFlags.push("assets/images/flags/bahamas.png");
+imgFlags.push("assets/images/flags/bangadesh.png");
+imgFlags.push("assets/images/flags/belgium.png");
+imgFlags.push("assets/images/flags/belize.png");
+imgFlags.push("assets/images/flags/bolivia.png");
+imgFlags.push("assets/images/flags/brazil.png");
+imgFlags.push("assets/images/flags/bulgaria.png");
+imgFlags.push("assets/images/flags/cambodia.png");
+imgFlags.push("assets/images/flags/cameroon.png");
+imgFlags.push("assets/images/flags/chile.png");
+imgFlags.push("assets/images/flags/colombia.png");
+imgFlags.push("assets/images/flags/costa-rica.png");
+imgFlags.push("assets/images/flags/cuba.png");
+imgFlags.push("assets/images/flags/finland.png");
+imgFlags.push("assets/images/flags/germany.png");
+imgFlags.push("assets/images/flags/greece.png");
+imgFlags.push("assets/images/flags/india.png");
 
-console.log(imgFlags)
+console.log(imgFlags);
 
 questionCounter = 1;
 
