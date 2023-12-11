@@ -44,31 +44,12 @@ function startGame() {
     })
 };
 
-function nextCountryFlag() {
-
-    updateDisplay(questionCounter++);
-    console.log(questionCounter);
+function nextQuestion() {
+    questionCounter++;
     if (questionCounter < 10) {
-
-    var nextBtn = document.getElementById("next-flag-btn");
-    nextBtn.addEventListener("click", () => {
-        randomFlagPicker();
-        function randomFlagPicker() {
-
-            const nextRandomImage = Math.floor(Math.random() * imgFlags.length);
-
-            if (nextRandomImage !== Number(localStorage.getItem("flag"))) {
-
-                countryFlag.src = imgFlags[nextRandomImage];
-
-                localStorage.setItem("flag", nextRandomImage);
-
-            } else {
-                randomFlagPicker();
-            }
-        }
-    })
+        updateDisplay();
     } else {
+        updateDisplay();
         document.getElementById("next-flag-btn").style.display = "none";
     }
 };
