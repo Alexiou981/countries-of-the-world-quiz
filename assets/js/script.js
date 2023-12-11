@@ -22,13 +22,14 @@ function startGame() {
 };
 
 function nextCountryFlag() {
+
     updateDisplay(questionCounter++);
+    console.log(questionCounter);
+    if (questionCounter < 10) {
 
     var nextBtn = document.getElementById("next-flag-btn");
     nextBtn.addEventListener("click", () => {
-
         randomFlagPicker();
-
         function randomFlagPicker() {
 
             const nextRandomImage = Math.floor(Math.random() * imgFlags.length);
@@ -44,11 +45,13 @@ function nextCountryFlag() {
             }
         }
     })
+    } else {
+        document.getElementById("next-flag-btn").style.display = "none";
+    }
 };
 
 function updateDisplay() {
     document.getElementById("question-counter").innerHTML = questionCounter;
 }
 
-console.log(questionCounter);
 
