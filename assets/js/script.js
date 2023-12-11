@@ -2,7 +2,30 @@
 
 const countryFlag = document.getElementById("random-flag");
 
-const imgFlags = ["assets/images/flags/algeria.png", "assets/images/flags/argentina.png", "assets/images/flags/australia.png", "assets/images/flags/bahamas.png", "assets/images/flags/bangadesh.png", "assets/images/flags/belgium.png"];
+const imgFlags = [];
+
+imgFlags.push(["assets/images/flags/algeria.png", "Algeria"]);
+imgFlags.push(["assets/images/flags/argentina.png", "Argentina"]);
+imgFlags.push(["assets/images/flags/australia.png", "Australia"]);
+imgFlags.push(["assets/images/flags/bahamas.png", "Bahamas"]);
+imgFlags.push(["assets/images/flags/bangadesh.png", "Bangladesh"]);
+imgFlags.push(["assets/images/flags/belgium.png", "Belgium"]);
+imgFlags.push(["assets/images/flags/belize.png", "Belize"]);
+imgFlags.push(["assets/images/flags/bolivia.png", "Bolivia"]);
+imgFlags.push(["assets/images/flags/brazil.png", "Brazil"]);
+imgFlags.push(["assets/images/flags/bulgaria.png", "Bulgaria"]);
+imgFlags.push(["assets/images/flags/cambodia.png", "Cambodia"]);
+imgFlags.push(["assets/images/flags/cameroon.png", "Cameroon"]);
+imgFlags.push(["assets/images/flags/chile.png", "Chile"]);
+imgFlags.push(["assets/images/flags/colombia.png", "Colombia"]);
+imgFlags.push(["assets/images/flags/costa-rica.png", "Costa-Rica"]);
+imgFlags.push(["assets/images/flags/cuba.png", "Cuba"]);
+imgFlags.push(["assets/images/flags/finland.png", "Finland"]);
+imgFlags.push(["assets/images/flags/germany.png", "Germany"]);
+imgFlags.push(["assets/images/flags/greece.png", "Greece"]);
+imgFlags.push(["assets/images/flags/india.png", "India"]);
+
+console.log(imgFlags)
 
 questionCounter = 1;
 
