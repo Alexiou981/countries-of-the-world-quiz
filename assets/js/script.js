@@ -40,6 +40,7 @@ function startGame() {
 
         const randomImg = Math.floor(Math.random() * imgFlags.length);
         countryFlag.src = imgFlags[randomImg];
+        imgFlags.splice(randomImg, 1);
         console.log(randomImg);
     })
 };
@@ -62,6 +63,7 @@ function updateDisplay() {
 function chooseFlag() {
     const randomImg = Math.floor(Math.random() * imgFlags.length);
     countryFlag.src = imgFlags[randomImg];
+    imgFlags.splice(randomImg, 1);
     console.log(randomImg);
 }
 
