@@ -31,7 +31,6 @@ questionCounter = 1;
 
 function startGame() {
     var startBtn = document.getElementById("start-game-btn");
-    startBtn.addEventListener("click", () => {
         /* Ensures that the Start Game button dissappears once clicked */
         startBtn.style.display = "none";
 
@@ -57,7 +56,7 @@ function startGame() {
          */
         imgFlags.splice(randomImg, 1);
         console.log(randomImg);
-    })
+    
 };
 
 /* 
@@ -88,7 +87,7 @@ function chooseFlag() {
     */
     const randomImg = Math.floor(Math.random() * imgFlags.length);
     countryFlag.src = imgFlags[randomImg];
-    
+
     /*
       Ideas on how to ensure the image doesn't get picked 
       twice were taken from this source: 
