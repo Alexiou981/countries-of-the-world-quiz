@@ -1,32 +1,6 @@
 
 
 const countryFlag = document.getElementById("random-flag");
-
-const imgFlags = [];
-
-imgFlags.push("assets/images/flags/algeria.png");
-imgFlags.push("assets/images/flags/argentina.png");
-imgFlags.push("assets/images/flags/australia.png");
-imgFlags.push("assets/images/flags/bahamas.png");
-imgFlags.push("assets/images/flags/bangadesh.png");
-imgFlags.push("assets/images/flags/belgium.png");
-imgFlags.push("assets/images/flags/belize.png");
-imgFlags.push("assets/images/flags/bolivia.png");
-imgFlags.push("assets/images/flags/brazil.png");
-imgFlags.push("assets/images/flags/bulgaria.png");
-imgFlags.push("assets/images/flags/cambodia.png");
-imgFlags.push("assets/images/flags/cameroon.png");
-imgFlags.push("assets/images/flags/chile.png");
-imgFlags.push("assets/images/flags/colombia.png");
-imgFlags.push("assets/images/flags/costa-rica.png");
-imgFlags.push("assets/images/flags/cuba.png");
-imgFlags.push("assets/images/flags/finland.png");
-imgFlags.push("assets/images/flags/germany.png");
-imgFlags.push("assets/images/flags/greece.png");
-imgFlags.push("assets/images/flags/india.png");
-
-console.log(imgFlags);
-
 questionCounter = 1;
 
 function startGame() {
@@ -46,15 +20,15 @@ function startGame() {
           random image from an array were taken from this source:
           https://openjavascript.info/2022/12/11/random-image-with-javascript/ 
         */
-        const randomImg = Math.floor(Math.random() * imgFlags.length);
-        countryFlag.src = imgFlags[randomImg];
+        const randomImg = Math.floor(Math.random() * choices.length);
+        countryFlag.src = choices[randomImg].image;
 
         /*
           Ideas on how to ensure the image doesn't get picked 
           twice were taken from this source: 
           https://www.w3schools.com/jsref/jsref_splice.asp
          */
-        imgFlags.splice(randomImg, 1);
+        choices.splice(randomImg, 1);
         console.log(randomImg);
     
 };
@@ -85,15 +59,15 @@ function chooseFlag() {
       a random image from an array were taken from this source:
       https://openjavascript.info/2022/12/11/random-image-with-javascript/ 
     */
-    const randomImg = Math.floor(Math.random() * imgFlags.length);
-    countryFlag.src = imgFlags[randomImg];
+    const randomImg = Math.floor(Math.random() * choices.length);
+    countryFlag.src = choices[randomImg].image;
 
     /*
       Ideas on how to ensure the image doesn't get picked 
       twice were taken from this source: 
       https://www.w3schools.com/jsref/jsref_splice.asp
     */
-    imgFlags.splice(randomImg, 1);
+    choices.splice(randomImg, 1);
     console.log(randomImg);
 }
 
