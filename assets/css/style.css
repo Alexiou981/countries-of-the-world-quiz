@@ -18,6 +18,11 @@ html {
     font-family: Permanent Marker, sans-serif;
   }
 
+  button {
+    text-transform: uppercase;
+    height: 25px;
+  }
+
   #gameplay-area {
     display: none;
   }
