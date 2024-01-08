@@ -7,7 +7,9 @@ const option3 = document.getElementById("option3")
 const option4 = document.getElementById("option4")
 var userAnswer;
 
-questionCounter = 1;
+var questionCounter = 1
+var correctAnswers = 0
+var incorrectAnswers = 0
 
 function startGame() {
     var startBtn = document.getElementById("start-game-btn");
@@ -84,9 +86,15 @@ function checkAnswer() {
 
       if (correctAnswer === userAnswer.innerText) {
         userAnswer.style.backgroundColor = "green"
+        incrementCorrectScore()
       } else {
         userAnswer.style.backgroundColor = "red"
       }
     })
 }
 checkAnswer()
+
+function incrementCorrectScore() {
+  let previousScore = (document.getElementById("correct-answers").innerText);
+  (document.getElementById("correct-answers").innerText) = ++correctAnswers;
+}
