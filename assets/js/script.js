@@ -1,9 +1,11 @@
-const countryFlag = document.getElementById("random-flag");
+const countryFlag = document.getElementById("random-flag")
 const optionBtns = document.getElementById("multiple-choices")
+const nextBtn = document.getElementById("next-flag-btn")
 const option1 = document.getElementById("option1")
 const option2 = document.getElementById("option2")
 const option3 = document.getElementById("option3")
 const option4 = document.getElementById("option4")
+var userAnswer;
 
 questionCounter = 1;
 
@@ -79,6 +81,12 @@ function checkAnswer() {
     optionBtns.addEventListener("click", function(){
       let correctAnswer = choices[randomImg].correct
       console.log("The correct answer is:", correctAnswer)
+
+      if (correctAnswer === userAnswer.innerText) {
+        alert("Congrats, you've got it right")
+      } else {
+        alert("Whoops, that's not quite right")
+      }
     })
 }
 checkAnswer()
