@@ -67,4 +67,11 @@ function chooseFlag() {
     console.log(randomImg);
 }
 
-
+function selectAnswer() {
+    /* Ideas on how to assign the user answer to the most recently clicked button were taken from this tutorial: https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified */
+    optionBtns.addEventListener("click", function(opt){
+      userAnswer = opt.target
+      console.log("You've picked:", userAnswer.innerText)
+    })
+}
+selectAnswer()
