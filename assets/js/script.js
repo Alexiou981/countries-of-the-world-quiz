@@ -83,9 +83,9 @@ function checkAnswer() {
       console.log("The correct answer is:", correctAnswer)
 
       if (correctAnswer === userAnswer.innerText) {
-        alert("Congrats, you've got it right")
+        userAnswer.style.backgroundColor = "green"
       } else {
-        alert("Whoops, that's not quite right")
+        userAnswer.style.backgroundColor = "red"
       }
     })
 }
