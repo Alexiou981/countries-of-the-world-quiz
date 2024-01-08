@@ -20,7 +20,7 @@ function startGame() {
       Ideas on how to choose random image from an array were taken from this source:
       https://openjavascript.info/2022/12/11/random-image-with-javascript/ 
     */
-    const randomImg = Math.floor(Math.random() * choices.length);
+    randomImg = Math.floor(Math.random() * choices.length);
     countryFlag.src = choices[randomImg].image;
 
     optionBtns.innerHTML = `
@@ -28,7 +28,6 @@ function startGame() {
         <button>${choices[randomImg].answers[1].text}</button>
         <button>${choices[randomImg].answers[2].text}</button>
         <button>${choices[randomImg].answers[3].text}</button>`;
-    choices.splice(randomImg, 1);
     console.log(randomImg);
 
 };
@@ -56,22 +55,30 @@ function chooseFlag() {
       Ideas on how to choose random image from an array were taken from this source:
       https://openjavascript.info/2022/12/11/random-image-with-javascript/ 
     */
-    const randomImg = Math.floor(Math.random() * choices.length);
+    randomImg = Math.floor(Math.random() * choices.length);
     countryFlag.src = choices[randomImg].image;
     optionBtns.innerHTML = `
       <button>${choices[randomImg].answers[0].text}</button>
       <button>${choices[randomImg].answers[1].text}</button>
       <button>${choices[randomImg].answers[2].text}</button>
       <button>${choices[randomImg].answers[3].text}</button>`;
-    choices.splice(randomImg, 1);
     console.log(randomImg);
 }
 
 function selectAnswer() {
-    /* Ideas on how to assign the user answer to the most recently clicked button were taken from this tutorial: https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified */
+    /* Ideas on how to assign the user answer to the most recently clicked button were taken from this tutorial: 
+    https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified */
     optionBtns.addEventListener("click", function(opt){
       userAnswer = opt.target
       console.log("You've picked:", userAnswer.innerText)
     })
 }
 selectAnswer()
+
+function checkAnswer() {
+    optionBtns.addEventListener("click", function(){
+      let correctAnswer = choices[randomImg].correct
+      console.log("The correct answer is:", correctAnswer)
+    })
+}
+checkAnswer()
