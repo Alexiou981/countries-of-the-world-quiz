@@ -89,6 +89,7 @@ function checkAnswer() {
         incrementCorrectScore()
       } else {
         userAnswer.style.backgroundColor = "red"
+        incrementIncorrectScore()
       }
     })
 }
@@ -97,4 +98,9 @@ checkAnswer()
 function incrementCorrectScore() {
   let previousScore = (document.getElementById("correct-answers").innerText);
   (document.getElementById("correct-answers").innerText) = ++correctAnswers;
+}
+
+function incrementIncorrectScore() {
+  let previousScore = (document.getElementById("wrong-answers").innerText);
+  (document.getElementById("wrong-answers").innerText) = ++incorrectAnswers;
 }
