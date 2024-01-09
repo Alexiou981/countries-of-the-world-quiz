@@ -1,10 +1,6 @@
 const countryFlag = document.getElementById("random-flag")
 const optionBtns = document.getElementById("multiple-choices")
 const nextBtn = document.getElementById("next-flag-btn")
-const option1 = document.getElementById("option1")
-const option2 = document.getElementById("option2")
-const option3 = document.getElementById("option3")
-const option4 = document.getElementById("option4")
 var userAnswer;
 
 var questionCounter = 1
@@ -27,12 +23,19 @@ function startGame() {
   randomImg = Math.floor(Math.random() * choices.length);
   countryFlag.src = choices[randomImg].image;
 
+  option1 = document.getElementById("option1")
+  option2 = document.getElementById("option2")
+  option3 = document.getElementById("option3")
+  option4 = document.getElementById("option4")
+
   optionBtns.innerHTML = `
         <button>${choices[randomImg].answers[0].text}</button>
         <button>${choices[randomImg].answers[1].text}</button>
         <button>${choices[randomImg].answers[2].text}</button>
-        <button>${choices[randomImg].answers[3].text}</button>`;
+        <button>${choices[randomImg].answers[3].text}</button>`
   console.log(randomImg);
+
+  console.log(option1.disabled)
 
 };
 
@@ -62,12 +65,15 @@ function chooseFlag() {
   */
   randomImg = Math.floor(Math.random() * choices.length);
   countryFlag.src = choices[randomImg].image;
+
   optionBtns.innerHTML = `
       <button>${choices[randomImg].answers[0].text}</button>
       <button>${choices[randomImg].answers[1].text}</button>
       <button>${choices[randomImg].answers[2].text}</button>
-      <button>${choices[randomImg].answers[3].text}</button>`;
-  console.log(randomImg);
+      <button>${choices[randomImg].answers[3].text}</button>`
+
+  console.log(randomImg)
+  console.log(option1.disabled)
 }
 
 function selectAnswer() {
