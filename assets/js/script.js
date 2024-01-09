@@ -108,6 +108,7 @@ function checkAnswer() {
         optionBtns.style.textAlign = "center"
       }
       optionBtns.style.backgroundColor = "slategray"
+      document.getElementById("random-flag").style.display = "none";
     }
   })
 }
