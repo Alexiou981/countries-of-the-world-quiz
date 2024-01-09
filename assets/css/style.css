@@ -18,8 +18,8 @@ html {
     font-family: Permanent Marker, sans-serif;
   }
 
-  button {
-    height: 25px;
+  #multiple-choices > button {
+    height: 25vh;
   }
 
   #gameplay-area {
