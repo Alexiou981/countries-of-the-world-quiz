@@ -107,6 +107,7 @@ function checkAnswer() {
         optionBtns.innerHTML = "<h1>You Lose!</h1>"
         optionBtns.style.textAlign = "center"
       }
+      optionBtns.style.backgroundColor = "slategray"
     }
   })
 }
