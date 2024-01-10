@@ -1,6 +1,10 @@
 const countryFlag = document.getElementById("random-flag")
 const optionBtns = document.getElementById("multiple-choices")
 const nextBtn = document.getElementById("next-flag-btn")
+const rematchBtn = document.getElementById("rematch")
+rematchBtn.style.display = "none"
+const exitBtn = document.getElementById("exit")
+exitBtn.style.display = "none"
 var userAnswer;
 
 var questionCounter = 1
@@ -126,6 +130,8 @@ function checkAnswer() {
       }
       optionBtns.style.backgroundColor = "slategray"
       document.getElementById("random-flag").style.display = "none";
+      rematchBtn.style.display = "block"
+      exitBtn.style.display = "block"
     }
   })
 }
