@@ -2,6 +2,7 @@ const countryFlag = document.getElementById("random-flag")
 const optionBtns = document.getElementById("multiple-choices")
 const nextBtn = document.getElementById("next-flag-btn")
 const rematchBtn = document.getElementById("rematch")
+const result = document.getElementById("result")
 rematchBtn.style.display = "none"
 const exitBtn = document.getElementById("exit")
 exitBtn.style.display = "none"
@@ -119,17 +120,18 @@ function checkAnswer() {
     if (questionCounter === 10) {
       document.getElementById("next-flag-btn").style.display = "none";
       if (correctAnswers > incorrectAnswers) {
-        optionBtns.innerHTML = "<h1>You Win!</h1>"
-        optionBtns.style.textAlign = "center"
+        result.innerHTML = "<h1>You Win!</h1>"
+        result.style.textAlign = "center"
       } else if (correctAnswers === incorrectAnswers) {
-        optionBtns.innerHTML = "<h1>It's a draw. <br> No winner this time.</h1>"
-        optionBtns.style.textAlign = "center"
+        result.innerHTML = "<h1>It's a draw. <br> No winner this time.</h1>"
+        result.style.textAlign = "center"
       } else {
-        optionBtns.innerHTML = "<h1>You Lose!</h1>"
-        optionBtns.style.textAlign = "center"
+        result.innerHTML = "<h1>You Lose!</h1>"
+        result.style.textAlign = "center"
       }
       optionBtns.style.backgroundColor = "slategray"
       document.getElementById("random-flag").style.display = "none";
+      optionBtns.style.display = "none"
       rematchBtn.style.display = "block"
       exitBtn.style.display = "block"
     }
