@@ -198,6 +198,156 @@ let choices = [
       {text: "Costa-Rica"}
     ],
     correct: "India"
+  },
+  {
+    image: "assets/images/flags/indonesia.png",
+    answers: [
+      {text: "Indonesia"},
+      {text: "Taiwan"},
+      {text: "Serbia"},
+      {text: "China"}
+    ],
+    correct: "Indonesia"
+  },
+  {
+    image: "assets/images/flags/iran.png",
+    answers: [
+      {text: "Saudi-Arabia"},
+      {text: "Israel"},
+      {text: "Iran"},
+      {text: "Turkey"}
+    ],
+    correct: "Iran"
+  },
+  {
+    image: "assets/images/flags/ireland.png",
+    answers: [
+      {text: "England"},
+      {text: "Netherlands"},
+      {text: "Bulgaria"},
+      {text: "Ireland"},
+    ],
+    correct: "Ireland"
+  },
+  {
+    image: "assets/images/flags/italy.png",
+    answers: [
+      {text: "Italy"},
+      {text: "France"},
+      {text: "Cyprus"},
+      {text: "Egypt"},
+    ],
+    correct: "Italy"
+  },
+  {
+    image: "assets/images/flags/japan.png",
+    answers: [
+      {text: "Taiwan"},
+      {text: "Pakistan"},
+      {text: "Serbia"},
+      {text: "Japan"}
+    ],
+    correct: "Japan"
+  },
+  {
+    image: "assets/images/flags/kenya.png",
+    answers: [
+      {text: "Somalia"},
+      {text: "Kenya"},
+      {text: "Lybia"},
+      {text: "Ghana"}
+    ],
+    correct: "Kenya"
+  },
+  {
+    image: "assets/images/flags/lebanon.png",
+    answers: [
+      {text: "Lebanon"},
+      {text: "Morocco"},
+      {text: "Algeria"},
+      {text: "Madagascar"}
+    ],
+    correct: "Lebanon"
+  },
+  {
+    image: "assets/images/flags/lybia.png",
+    answers: [
+      {text: "Israel"},
+      {text: "Turkey"},
+      {text: "Lybia"},
+      {text: "Syria"}
+    ],
+    correct: "Lybia"
+  },
+  {
+    image: "assets/images/flags/malaysia.png",
+    answers: [
+      {text: "Indonesia"},
+      {text: "Taiwan"},
+      {text: "Malaysia"},
+      {text: "China"}
+    ],
+    correct: "Malaysia"
+  },
+  {
+    image: "assets/images/flags/mexico.png",
+    answers: [
+      {text: "Guatemala"},
+      {text: "Mexico"},
+      {text: "Ecuador"},
+      {text: "Cuba"}
+    ],
+    correct: "Mexico"
+  },
+  {
+    image: "assets/images/flags/new-zealand.png",
+    answers: [
+      {text: "Indonesia"},
+      {text: "Australia"},
+      {text: "Japan"},
+      {text: "New-Zealand"}
+    ],
+    correct: "New-Zealand"
+  },
+  {
+    image: "assets/images/flags/saudi-arabia.png",
+    answers: [
+      {text: "Dubai"},
+      {text: "Saudi-Arabia"},
+      {text: "Egypt"},
+      {text: "China"}
+    ],
+    correct: "Saudi-Arabia"
+  },
+  {
+    image: "assets/images/flags/singapore.png",
+    answers: [
+      {text: "Indonesia"},
+      {text: "Taiwan"},
+      {text: "Serbia"},
+      {text: "Singapore"}
+    ],
+    correct: "Singapore"
+  },
+  {
+    image: "assets/images/flags/spain.png",
+    answers: [
+      {text: "Spain"},
+      {text: "France"},
+      {text: "Italy"},
+      {text: "Andorra"}
+    ],
+    correct: "Spain"
+  },
+  {
+    image: "assets/images/flags/sri-lanka.png",
+    answers: [
+      {text: "Sri-Lanka"},
+      {text: "Indonesia"},
+      {text: "Taiwan"},
+      {text: "China"}
+    ],
+    correct: "Sri-Lanka"
   }
   ]
    console.log(choices)
