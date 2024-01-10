@@ -68,10 +68,6 @@ html {
     text-align: center;
   }
 
-  #exit-message{
-
-  }
-
   #main-game-area{
     display: flex;
     position: relative;
