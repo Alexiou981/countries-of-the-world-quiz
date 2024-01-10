@@ -171,10 +171,6 @@ function whiteOptionBtns() {
 }
 
 function restart() {
-  choices = choices.concat(removedChoices)
-  removedChoices = []
-  console.log(choices)
-  console.log(removedChoices)
   window.location.reload()
   
 }
