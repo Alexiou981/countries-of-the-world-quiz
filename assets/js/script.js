@@ -79,7 +79,17 @@ function selectAnswer() {
     userAnswer = opt.target
     console.log("You've picked:", userAnswer.innerText)
   })
+
+  const disableOptionBnts = () => {
+    option1.disabled = true,
+    option2.disabled = true,
+    option3.disabled = true,
+    option4.disabled = true
+  }
+  optionBtns.addEventListener("click", disableOptionBnts)
 }
+ 
+
 selectAnswer()
 
 function checkAnswer() {
