@@ -1,8 +1,10 @@
-const countryFlag = document.getElementById("random-flag")
+let countryFlag = document.getElementById("random-flag")
 const optionBtns = document.getElementById("multiple-choices")
 const nextBtn = document.getElementById("next-flag-btn")
 const rematchBtn = document.getElementById("rematch")
 const result = document.getElementById("result")
+const exitMsg = document.getElementById("exit-message")
+exitMsg.style.display = "none"
 rematchBtn.style.display = "none"
 const exitBtn = document.getElementById("exit")
 exitBtn.style.display = "none"
@@ -21,6 +23,7 @@ function startGame() {
   document.getElementById("landing-flag").style.display = "none";
   document.getElementById("next-flag-btn").style.display = "none";
   document.getElementById("random-flag").style.display = "block";
+  
   /*
     Ideas on how to choose random image from an array were taken from this source:
     https://openjavascript.info/2022/12/11/random-image-with-javascript/ 
@@ -172,12 +175,18 @@ function restart() {
   removedChoices = []
   console.log(choices)
   console.log(removedChoices)
+  window.location.reload()
   
 }
 
-function restart() {
-  /** ideas on how to create a reload button were taken from here:
-   * https://teamtreehouse.com/community/any-one-know-how-to-make-a-restart-button
-  */
-  window.location.reload()
+function exit() {
+  exitMsg.style.display = "block"
+  document.getElementById("question").style.display = "none"
+  document.getElementById("rematch").style.display = "none"
+  document.getElementById("exit").style.display = "none"
+  document.getElementById("main-game-area").style.display = "none"
+  document.getElementById("counter-area").style.display = "none"
+  document.getElementById("player-score-area").style.display = "none"
+  
+
 }
