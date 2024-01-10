@@ -1,4 +1,4 @@
-const choices = [
+let choices = [
     {
       image: "assets/images/flags/algeria.png",
       answers: [
@@ -201,4 +201,5 @@ const choices = [
   }
   ]
    console.log(choices)
-  
+  let removedChoices = []
+  console.log(removedChoices)
