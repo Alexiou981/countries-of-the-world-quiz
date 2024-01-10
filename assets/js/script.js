@@ -33,6 +33,8 @@ function startGame() {
   option3.innerHTML = choices[randomImg].answers[2].text
   option4.innerHTML = choices[randomImg].answers[3].text
 
+  whiteOptionBtns()
+
   console.log(option1.disabled)
 };
 
@@ -43,9 +45,11 @@ function nextQuestion() {
   document.getElementById("next-flag-btn").style.display = "none";
   chooseFlag()
   enableOptionBtns()
+  whiteOptionBtns()
   questionCounter++;
   if (questionCounter < 10) {
     updateDisplay();
+    choices.splice(randomImg, 1)
   } else {
     updateDisplay();
     document.getElementById("next-flag-btn").style.display = "none";
@@ -142,4 +146,11 @@ function enableOptionBtns() {
   option2.disabled = false,
   option3.disabled = false,
   option4.disabled = false
+}
+
+function whiteOptionBtns() {
+  option1.style.backgroundColor = "white",
+  option2.style.backgroundColor = "white"
+  option3.style.backgroundColor = "white"
+  option4.style.backgroundColor = "white"
 }
