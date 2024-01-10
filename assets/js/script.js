@@ -49,7 +49,6 @@ function nextQuestion() {
   questionCounter++;
   if (questionCounter < 10) {
     updateDisplay();
-    choices.splice(randomImg, 1)
   } else {
     updateDisplay();
     document.getElementById("next-flag-btn").style.display = "none";
@@ -109,6 +108,7 @@ function checkAnswer() {
       userAnswer.style.backgroundColor = "red"
       incrementIncorrectScore()
     }
+    choices.splice(randomImg, 1)
 
     document.getElementById("next-flag-btn").style.display = "block";
 
