@@ -28,13 +28,13 @@
             <div id="landing-flag"></div>
             <img id="random-flag" src="" alt="Random country flag">
         </div>
-
         <!-- Clickable button that allows the user to begin the quiz-->
-
+        <p style="font-size: 150%" id="exit-message">THANKS FOR PLAYING THE GAME</p>
         <button onclick="startGame()" id="start-game-btn">START GAME</button>
         <button onclick="nextQuestion()" id="next-flag-btn">NEXT</button>
         <button onclick="restart()" id="rematch">REMATCH</button>
-        <button id="exit">EXIT</button>
+        <button onclick="exit()" id="exit">EXIT</button>
+       
         
 
         <!-- Main Game Area that displays a multiple choice for the user to pick the right answer-->
@@ -42,8 +42,8 @@
         <div id="gameplay-area">
 
             <!-- Question Counter  -->
-            <p>What country does this flag belong to?</p>
-            <div>
+            <p id="question">What country does this flag belong to?</p>
+            <div id="counter-area">
                 <h3>Question: <span id="question-counter">1</span>/10</h3> 
                 
             </div>
@@ -60,7 +60,7 @@
 
             <!-- Player Score Area, outputs the current score to the user-->
 
-            <div class="player-score-area">
+            <div id="player-score-area">
                 <h2>SCORE:</h2>
                 <h3>CORRECT:<span id="correct-answers">0</span></h3>
                 <h3> INCORRECT:<span id="wrong-answers">0</span></h3>

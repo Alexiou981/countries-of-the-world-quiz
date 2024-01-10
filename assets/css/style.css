@@ -68,6 +68,10 @@ html {
     text-align: center;
   }
 
+  #exit-message{
+
+  }
+
   #main-game-area{
     display: flex;
     position: relative;
@@ -86,7 +90,7 @@ html {
     flex-grow: 1;
   }
 
-  .player-score-area {
+  #player-score-area {
     width: 70vw;
     position: relative;
     font-size: 50%;
