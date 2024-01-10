@@ -42,6 +42,7 @@ function startGame() {
 function nextQuestion() {
   document.getElementById("next-flag-btn").style.display = "none";
   chooseFlag()
+  enableOptionBtns()
   questionCounter++;
   if (questionCounter < 10) {
     updateDisplay();
@@ -82,13 +83,13 @@ function selectAnswer() {
 
   const disableOptionBnts = () => {
     option1.disabled = true,
-    option2.disabled = true,
-    option3.disabled = true,
-    option4.disabled = true
+      option2.disabled = true,
+      option3.disabled = true,
+      option4.disabled = true
   }
   optionBtns.addEventListener("click", disableOptionBnts)
 }
- 
+
 
 selectAnswer()
 
@@ -134,4 +135,11 @@ function incrementCorrectScore() {
 function incrementIncorrectScore() {
   let previousScore = (document.getElementById("wrong-answers").innerText);
   (document.getElementById("wrong-answers").innerText) = ++incorrectAnswers;
+}
+
+function enableOptionBtns() {
+  option1.disabled = false,
+  option2.disabled = false,
+  option3.disabled = false,
+  option4.disabled = false
 }
