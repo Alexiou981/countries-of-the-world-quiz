@@ -174,3 +174,10 @@ function restart() {
   console.log(removedChoices)
   
 }
+
+function restart() {
+  /** ideas on how to create a reload button were taken from here:
+   * https://teamtreehouse.com/community/any-one-know-how-to-make-a-restart-button
+  */
+  window.location.reload()
+}
