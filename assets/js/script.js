@@ -113,7 +113,11 @@ function checkAnswer() {
       userAnswer.style.backgroundColor = "red"
       incrementIncorrectScore()
     }
+
+    removedChoices.push(choices[randomImg])
     choices.splice(randomImg, 1)
+    console.log(randomImg)
+    console.log(removedChoices)
 
     document.getElementById("next-flag-btn").style.display = "block";
 
@@ -161,4 +165,12 @@ function whiteOptionBtns() {
   option2.style.backgroundColor = "white"
   option3.style.backgroundColor = "white"
   option4.style.backgroundColor = "white"
+}
+
+function restart() {
+  choices = choices.concat(removedChoices)
+  removedChoices = []
+  console.log(choices)
+  console.log(removedChoices)
+  
 }
