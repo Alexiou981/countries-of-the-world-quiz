@@ -125,11 +125,12 @@ html {
   
 
  @media screen and (min-width: 768px) {
+  #main-game-area {
+    width: 50vw;
+  }
   #player-score-area {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
-
-
   }
  }
