@@ -139,6 +139,7 @@ function checkAnswer() {
         result.innerHTML = "<h1>You Lose!</h1>"
         result.style.textAlign = "center"
       }
+      
       optionBtns.style.backgroundColor = "slategray"
       document.getElementById("random-flag").style.display = "none"
       document.getElementById("question").style.display = "none"
@@ -146,6 +147,7 @@ function checkAnswer() {
       optionBtns.style.display = "none"
       rematchBtn.style.display = "block"
       exitBtn.style.display = "block"
+      document.getElementById("flag-container").remove()
     }
   })
 }
@@ -181,6 +183,7 @@ function restart() {
 }
 
 function exit() {
+
   exitMsg.style.display = "block"
   document.getElementById("heading").style.display = "block"
   document.getElementById("question").style.display = "none"
