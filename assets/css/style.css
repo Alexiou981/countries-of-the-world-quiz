@@ -61,6 +61,11 @@ html {
 
   #next-flag-btn {
     display: none;
+    margin-top: 2%;
+  }
+
+  #question {
+    font-size: 120%;
   }
 
   p {
