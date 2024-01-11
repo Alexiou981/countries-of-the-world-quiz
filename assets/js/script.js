@@ -138,7 +138,9 @@ function checkAnswer() {
         result.style.textAlign = "center"
       }
       optionBtns.style.backgroundColor = "slategray"
-      document.getElementById("random-flag").style.display = "none";
+      document.getElementById("random-flag").style.display = "none"
+      document.getElementById("question").style.display = "none"
+      document.getElementById("counter-area").style.display = "none"
       optionBtns.style.display = "none"
       rematchBtn.style.display = "block"
       exitBtn.style.display = "block"
