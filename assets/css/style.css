@@ -98,4 +98,11 @@ html {
   .options:hover {
     background-color: lightcoral;
   }
+
+  #result {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
   
