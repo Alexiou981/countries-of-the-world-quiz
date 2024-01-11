@@ -111,6 +111,13 @@ html {
     justify-content: center;
     align-self: center;
   }
+
+  #end-of-game-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
   
 
  @media screen and (min-width: 768px) {
