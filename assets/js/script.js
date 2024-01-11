@@ -52,6 +52,7 @@ function startGame() {
 */
 function nextQuestion() {
   document.getElementById("next-flag-btn").style.display = "none";
+  document.getElementById("question").style.display = "block";
   chooseFlag()
   enableOptionBtns()
   whiteOptionBtns()
@@ -124,6 +125,7 @@ function checkAnswer() {
     console.log(removedChoices)
 
     document.getElementById("next-flag-btn").style.display = "block";
+    document.getElementById("question").style.display = "none";
 
     if (questionCounter === 10) {
       document.getElementById("next-flag-btn").style.display = "none";
