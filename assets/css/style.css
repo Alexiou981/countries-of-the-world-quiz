@@ -27,26 +27,25 @@ html {
   }
 
   #flag-container {
-    height: 45vh;
+    height: 40vh;
     width: 100%;
     display: flex;
     position: relative;
   }
   #landing-flag {
     background-image: url("../images/earth-flag.jpeg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
     position: relative;
-    width: 100vw;
-    margin: 10px;
+    width: 100%;
     min-height: 40vh; 
   }
 
   #random-flag {
     display: none;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     width: 90vw;
     margin: auto;
@@ -54,7 +53,7 @@ html {
   }
 
 
-  .start-game-btn {
+  #start-game-btn {
     position: relative;
     margin: 5% 0;
   }
