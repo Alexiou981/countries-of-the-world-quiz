@@ -15,9 +15,9 @@
 </head>
 
 <body>
-    
+
     <header>
-    <!-- Heading of the game -->
+        <!-- Heading of the game -->
         <h1 id="heading">Countries of the World</h1>
     </header>
     <main>
@@ -32,10 +32,8 @@
         <p style="font-size: 150%" id="exit-message">THANKS FOR PLAYING THE GAME</p>
         <button onclick="startGame()" id="start-game-btn">START GAME</button>
         <button onclick="nextQuestion()" id="next-flag-btn">NEXT</button>
-        <button onclick="restart()" id="rematch">REMATCH</button>
-        <button onclick="exit()" id="exit">EXIT</button>
-       
         
+
 
         <!-- Main Game Area that displays a multiple choice for the user to pick the right answer-->
 
@@ -44,8 +42,8 @@
             <!-- Question Counter  -->
             <p id="question">Which country is this?</p>
             <div id="counter-area">
-                <h3>Question: <span id="question-counter">1</span>/10</h3> 
-                
+                <h3>Question: <span id="question-counter">1</span>/10</h3>
+
             </div>
 
             <div id="main-game-area">
@@ -56,6 +54,10 @@
                     <button id="option4">PLANET EARTH</button>
                 </div>
                 <div id="result"></div>
+            </div>
+            <div id="end-of-game-btns">
+                <button onclick="restart()" id="rematch">REMATCH</button>
+                <button onclick="exit()" id="exit">EXIT</button>
             </div>
 
             <!-- Player Score Area, outputs the current score to the user-->
@@ -69,4 +71,5 @@
     <script src="assets/js/choices.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
