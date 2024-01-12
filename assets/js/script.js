@@ -18,7 +18,8 @@ function startGame() {
   var startBtn = document.getElementById("start-game-btn");
   /* Ensures that the Start Game button dissappears once clicked */
   startBtn.style.display = "none";
-  document.getElementById("heading").style.display = "none"
+  
+  document.getElementById("footer").style.display = "none"
   /* Additionally, make those elements show up or dissappear once the button is clicked */
   document.getElementById("gameplay-area").style.display = "block";
   document.getElementById("landing-flag").style.display = "none";
