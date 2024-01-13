@@ -21,7 +21,7 @@ header,
 main {
   display: flex;
   flex-direction: column;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   align-items: center;
   font-family: Permanent Marker, sans-serif;
 }
@@ -105,7 +105,6 @@ p {
   justify-content: center;
   width: 80vw;
   height: 20vh;
-  padding: 50px, 0;
 }
 
 #multiple-choices {
