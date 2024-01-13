@@ -124,6 +124,7 @@ html {
     
   }
 
+/* Styling for result screen at the end of the game */
   #result {
     display: flex; 
     flex-direction: column;
@@ -131,6 +132,7 @@ html {
     align-self: center;
   }
 
+/* Style rule for rematch and exit buttons */
   #end-of-game-btns {
     display: flex;
     flex-direction: row;
@@ -139,6 +141,7 @@ html {
     padding-top: 20px ;
   }
   
+/* Style rule for footer */
   #footer-container {
     font-size: 120%;
     display: flex;
@@ -157,6 +160,8 @@ html {
     padding-left: 25%;
     font-family: Permanent Marker, sans-serif;
   }
+
+  /* Media query for table screens and larger */
  @media screen and (min-width: 768px) {
   #main-game-area {
     max-width: 50vw;
@@ -169,12 +174,14 @@ html {
   }
  }
 
+ /* Media query for laptop screens and larger */
  @media screen and (min-width: 1024px) {
   #main-game-area {
     max-width: 35vw;
   }
  }
 
+ /* Media query for desktop screens and larger */
  @media screen and (min-width: 1440px) {
   #main-game-area {
     max-width: 30vw;
