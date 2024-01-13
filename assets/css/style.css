@@ -1,168 +1,170 @@
 /* Link for importing google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-/* Basic styling for html */ 
+/* Basic styling for html */
 html {
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(to bottom right, rgb(70, 154, 157), rgb(169, 167, 84));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, rgb(70, 154, 157), rgb(169, 167, 84));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* Sets header's font size */
-  header {
-    font-size: 70%;
-  }
+header {
+  font-size: 70%;
+}
 
 /* Style rule for header and main elements */
-  header, main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: no-wrap;
-    align-items: center;
-    font-family: Permanent Marker, sans-serif;
-  }
+header,
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  align-items: center;
+  font-family: Permanent Marker, sans-serif;
+}
 
 /* Styling for all buttons of the game */
-  button {
-    font-size: 100%;
-    font-family: Permanent Marker, sans-serif;
-    color: rgb(58, 176, 40);
-    border-radius: 44%;
-    opacity: 85%;
-    box-shadow: 2px 4px rgba(0, 0, 0, 0.261);
-  }
+button {
+  font-size: 100%;
+  font-family: Permanent Marker, sans-serif;
+  color: rgb(58, 176, 40);
+  border-radius: 44%;
+  opacity: 85%;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.261);
+}
 
 /* Specific styling for option buttons only */
 
-  #multiple-choices > button {
-    height: 25vh;
-    color: rgb(34, 85, 152);
-    
-  }
+#multiple-choices>button {
+  height: 25vh;
+  color: rgb(34, 85, 152);
 
-  /* Sets display of the gameplay area on the landing page to be none */
-  #gameplay-area {
-    display: none;
-  }
+}
 
-  /* Style rules for flag conatiner, landing flag and randomly picked flag */
+/* Sets display of the gameplay area on the landing page to be none */
+#gameplay-area {
+  display: none;
+}
 
-  #flag-container {
-    min-height: 25vh;
-    width: 100%;
-    display: flex;
-    position: relative;
-  }
-  #landing-flag {
-    background-image: url("../images/earth-flag.jpeg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-    position: relative;
-    width: 100%;
-    max-height: 30vh; 
-  }
+/* Style rules for flag conatiner, landing flag and randomly picked flag */
 
-  #random-flag {
-    display: none;
-    object-fit: contain;
-    object-position: center;
-    width: 90vw;
-    margin: auto;
-    max-height: 40vh;
-  }
+#flag-container {
+  min-height: 25vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+#landing-flag {
+  background-image: url("../images/earth-flag.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  position: relative;
+  width: 100%;
+  max-height: 30vh;
+}
+
+#random-flag {
+  display: none;
+  object-fit: contain;
+  object-position: center;
+  width: 90vw;
+  margin: auto;
+  max-height: 40vh;
+}
 
 /* Style rules for start and next button */
-  #start-game-btn {
-    position: relative;
-    margin: 5% 0;
-  }
+#start-game-btn {
+  position: relative;
+  margin: 5% 0;
+}
 
-  #next-flag-btn {
-    display: none;
-    margin-top: 2%;
-  }
+#next-flag-btn {
+  display: none;
+  margin-top: 2%;
+}
 
-  #question {
-    font-size: 120%;
-  }
+#question {
+  font-size: 120%;
+}
 
-  p {
-    font-size: 80%;
-    text-align: center;
-  }
+p {
+  font-size: 80%;
+  text-align: center;
+}
 
 /* Styling for gameplay area, multiple-choices, question number and score area */
-  #main-game-area{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    width: 80vw;
-    height: 20vh;
-    padding: 50px, 0;
-  }
+#main-game-area {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 80vw;
+  height: 20vh;
+  padding: 50px, 0;
+}
 
-  #multiple-choices {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-grow: 1;
-  }
+#multiple-choices {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
 
-  #player-score-area {
-    display: flex;  
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    font-size: 80%;
-    padding-top: 2%;
-    
-  }
+#player-score-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  font-size: 80%;
+  padding-top: 2%;
+
+}
 
 /* Styling for result screen at the end of the game */
-  #result {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-  }
+#result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
 
 /* Style rule for rematch and exit buttons */
-  #end-of-game-btns {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    padding-top: 20px ;
-  }
-  
+#end-of-game-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-top: 20px;
+}
+
 /* Style rule for footer */
-  #footer-container {
-    font-size: 120%;
-    display: flex;
-    flex-direction: column;    
-    width: 100%;
-    font-family: Permanent Marker, sans-serif;
-  }
+#footer-container {
+  font-size: 120%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: Permanent Marker, sans-serif;
+}
 
-  #footer-container > #sm-links {
-    position: static;
-    font-size: 100%;
-    display: flex; 
-    justify-content: center;
-    justify-content: space-evenly;
-    width: 50%;
-    padding-left: 25%;
-    font-family: Permanent Marker, sans-serif;
-  }
+#footer-container>#sm-links {
+  position: static;
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: 50%;
+  padding-left: 25%;
+  font-family: Permanent Marker, sans-serif;
+}
 
-  /* Media query for table screens and larger */
- @media screen and (min-width: 768px) {
+/* Media query for table screens and larger */
+@media screen and (min-width: 768px) {
   #main-game-area {
     max-width: 50vw;
   }
@@ -172,18 +174,18 @@ html {
     justify-content: space-evenly;
     align-items: flex-start;
   }
- }
+}
 
- /* Media query for laptop screens and larger */
- @media screen and (min-width: 1024px) {
+/* Media query for laptop screens and larger */
+@media screen and (min-width: 1024px) {
   #main-game-area {
     max-width: 35vw;
   }
- }
+}
 
- /* Media query for desktop screens and larger */
- @media screen and (min-width: 1440px) {
+/* Media query for desktop screens and larger */
+@media screen and (min-width: 1440px) {
   #main-game-area {
     max-width: 30vw;
   }
- }
+}
