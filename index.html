@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,9 +13,7 @@
     <!-- Quiz Game Title -->
     <title>Countries of The World</title>
 </head>
-
 <body>
-
     <header>
         <!-- Heading of the game -->
         <h1 id="heading">Countries of the World</h1>
@@ -34,8 +31,6 @@
         <button onclick="startGame()" id="start-game-btn">START GAME</button>
         <button onclick="nextQuestion()" id="next-flag-btn">NEXT</button>
 
-
-
         <!-- Main Game Area that displays a multiple choice for the user to pick the right answer-->
 
         <div id="gameplay-area">
@@ -46,7 +41,7 @@
                 <h3>Question: <span id="question-counter">1</span>/10</h3>
 
             </div>
-
+            <!-- Main game area, includes multiple choices, score area, resulsts and end of game buttons-->
             <div id="main-game-area">
                 <div id="multiple-choices">
                     <button id="option1">GREECE</button>
@@ -69,6 +64,8 @@
             </div>
         </div>
     </main>
+
+    <!-- Footer -->
     <footer id="footer">
         <div id="footer-container">
             <p id="footer-purposes">This quiz game was made for educational purposes</p>
@@ -87,5 +84,4 @@
     <script src="assets/js/choices.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>
