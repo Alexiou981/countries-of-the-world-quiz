@@ -21,8 +21,19 @@ html {
     font-family: Permanent Marker, sans-serif;
   }
 
+  button {
+    font-size: 100%;
+    font-family: Permanent Marker, sans-serif;
+    color: rgb(58, 176, 40);
+    border-radius: 44%;
+    opacity: 85%;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.261);
+  }
+
   #multiple-choices > button {
     height: 25vh;
+    color: rgb(34, 85, 152);
+    
   }
 
   #gameplay-area {
@@ -79,7 +90,6 @@ html {
     display: flex;
     position: relative;
     justify-content: center;
-    background-color: rgba(0, 0, 0, .3);
     width: 80vw;
     height: 20vh;
     padding: 50px, 0;
