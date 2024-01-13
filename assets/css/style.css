@@ -11,7 +11,6 @@ html {
   
   header {
     font-size: 70%;
-    margin-top: 5%;
   }
 
   header, main {
@@ -31,7 +30,7 @@ html {
   }
 
   #flag-container {
-    height: 40vh;
+    min-height: 25vh;
     width: 100%;
     display: flex;
     position: relative;
@@ -44,7 +43,7 @@ html {
     background-attachment: scroll;
     position: relative;
     width: 100%;
-    min-height: 40vh; 
+    max-height: 30vh; 
   }
 
   #random-flag {
