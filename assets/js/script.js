@@ -15,8 +15,6 @@ exitMsg.style.display = "none";
 rematchBtn.style.display = "none";
 exitBtn.style.display = "none";
 
-
-
 /**
  * The startGame function hides all elements of the landing page
  * and loads the elements of the gameplay area.
@@ -220,6 +218,7 @@ function restart() {
  * Hides elemnts of gameplay area and shows thank you message
  */
 function exit() {
+  document.getElementById("footer").style.display = "flex";
   exitMsg.style.display = "block";
   document.getElementById("heading").style.display = "block";
   document.getElementById("question").style.display = "none";
