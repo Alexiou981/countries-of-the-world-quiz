@@ -68,13 +68,18 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
 - Individually tested the game on the following devices:
     - Mobiles: Iphone 14 Pro Max, Xiaomi Redmi Note 9, Xiami POCO X5 Pro, Ipad Pro.
     - Laptops: Macbook Pro 13", ASUS Zenbook 13".
-    
+
 - All links to social media open in a new page.
 - All images are displayed on the deployed site as well and there are no broken links or contents.
 
 ### *Validator Testing*
+- Index.html passed through the [HTML](https://validator.w3.org/nu/) validator without any errors.
+- Style.css passed through the [CSS](https://jigsaw.w3.org/css-validator/) validator without any errors.
+- Script.js passed through the [JShint](https://jshint.com/) without any errors, only a warning about unused variables (startGame, nextQuestion, restart and exti), all of which are being used as an onclick="" in HTML.
+- Choices.js passed through the [JShint](https://jshint.com/) without any errors, only a warning about the choices variable being unused, this is being accessed however by some parts of the code in the Script.js file .
 
 ### *Unfixed Bugs* 
+
 
 ## **Repository and Workspace Set Up**
 -  Creating a repository on Github.com:
