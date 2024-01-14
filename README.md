@@ -14,8 +14,17 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
     - The earth flag the game is related to it's countries.
     - The start button that runs the game.
     - The footer that consist of the clickable social media links, purpose of the game and credits to the creator.
+
     ![Landing Page](assets/images/landing-screen.png)
 
+- __Gameplay Area__
+- The gamepla area consist of:
+    - The game title which stays on display throughout the entire game.
+    - It outputs to the user the flag that was picked randomly out of the choices array.
+    - It also, offers four possible answers with immediate validation (correct or incorrect answer).
+    - At the bottom of the page is displayed the currect player score.
+    
+![Gameplay Area](assets/images/gameplay-area.png)
 - __The Footer__
 
 - __Styling Choices__
