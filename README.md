@@ -8,12 +8,17 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
 ## **Features**
 ### *Existing Features*
 
-- __Styling Choices__
-
 - __Landing Page__
-    ![Landing Image]
+- The landing page consist of:
+    - The game title.
+    - The earth flag the game is related to it's countries.
+    - The start button that runs the game.
+    - The footer that consist of the clickable social media links, purpose of the game and credits to the creator.
+    ![Landing Page](assets/images/landing-screen.png)
 
 - __The Footer__
+
+- __Styling Choices__
 
 ![Footer with Social Media links]
 
