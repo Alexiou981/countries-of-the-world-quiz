@@ -36,6 +36,7 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
 - __Exit Screen__
 
 ![Exit Screen](assets/images/exit-screen.png)
+
 - __Styling Choices__
 
 ![Footer with Social Media links]
