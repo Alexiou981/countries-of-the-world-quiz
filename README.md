@@ -1,5 +1,7 @@
 # COUNTRIES OF THE WORLD QUIZ
+Countries of the World is an interactice quiz game that presents to the user a randomly selected flag at a time and offers four possible answers, asking the user which country is being displayed each time. It is ideal for all age groups from the younger ages to older ones and it has as a main purpose to enhance the knowledge of this specific topic in an entertaining way.
 
+The live site can be found [here](https://alexiou981.github.io/countries-of-the-world-quiz/)
 
 ![Landing Page](assets/images/am-i-responsive.png)
 
