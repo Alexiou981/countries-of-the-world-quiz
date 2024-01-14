@@ -56,6 +56,12 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
 
 ### *Potential Futute Features*
 
+- Add even more country flags, a nice touch would be to include all 195 flags available from [here](https://www.worldometers.info/geography/flags-of-the-world/).
+- Add difficulty modes easy, which will include the most popular flags, medium, which will include those flags that are left out of the most and least popular flags and hard which will include the least popular country flags.
+- Add another game mode which will allow the user to play the game by choosing globally or a specific continent.
+- Add a countdown timer, instead of a question counter, that will allow the user to go through as many or as little flags as possible depending on the speed that he proceeds with to the next answer.
+- Lastly, change the duration of the countdown depending on the difficulty selected.
+
 ## **Testing**
 
 - The website was tested through various devices and prooven to be responsive in all screen sizes using the Google Chrome Inspector.
