@@ -26,11 +26,12 @@ exitBtn.style.display = "none"
 function startGame() {
   var startBtn = document.getElementById("start-game-btn");
   startBtn.style.display = "none";
-  document.getElementById("footer").style.display = "none"
+  document.getElementById("footer").style.display = "none";
+  document.getElementById("random-flag").style.display = "block";
   document.getElementById("gameplay-area").style.display = "block";
   document.getElementById("landing-flag").style.display = "none";
   document.getElementById("next-flag-btn").style.display = "none";
-  document.getElementById("random-flag").style.display = "block";
+  
   /*
     Ideas on how to choose random image from an array were taken from this source:
     https://openjavascript.info/2022/12/11/random-image-with-javascript/ 
