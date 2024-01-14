@@ -39,7 +39,13 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
 
 - __Styling Choices__
 
-![Footer with Social Media links]
+    - The color palette was created using [Coolors](https://coolors.co/)
+
+    - I choose those colors in order to give the game a playful and relaxing mood.
+
+    - There is sufficient contrast between background and foreground for enhances readability.
+
+![Color Palette](assets/images/color-palette.png)
 
 ### *Potential Futute Features*
 
