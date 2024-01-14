@@ -349,7 +349,4 @@ let choices = [
     ],
     correct: "Sri-Lanka"
   }
-  ]
-   console.log(choices)
-  let removedChoices = []
-  console.log(removedChoices)
+  ];
