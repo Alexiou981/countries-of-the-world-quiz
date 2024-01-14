@@ -65,6 +65,10 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
 ## **Testing**
 
 - The website was tested through various devices and prooven to be responsive in all screen sizes using the Google Chrome Inspector.
+- Individually tested the game on the following devices:
+    - Mobiles: Iphone 14 Pro Max, Xiaomi Redmi Note 9, Xiami POCO X5 Pro, Ipad Pro.
+    - Laptops: Macbook Pro 13", ASUS Zenbook 13".
+    
 - All links to social media open in a new page.
 - All images are displayed on the deployed site as well and there are no broken links or contents.
 
