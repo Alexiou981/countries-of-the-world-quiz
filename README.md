@@ -47,6 +47,13 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
 
 ![Color Palette](assets/images/color-palette.png)
 
+- __Typography__
+
+- The font used for this game is Permanent Marker and was taken from Google Fonts.
+- I choose this specific family since I wanted to give it a school-like type writing since it's an educational game.
+
+![Typography](assets/images/typography.png)
+
 ### *Potential Futute Features*
 
 ## **Testing**
