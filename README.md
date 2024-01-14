@@ -1,7 +1,7 @@
 # COUNTRIES OF THE WORLD QUIZ
 
 
-![Landing Page]
+![Landing Page](assets/images/am-i-responsive.png)
 
 ## **Features**
 ### *Existing Features*
