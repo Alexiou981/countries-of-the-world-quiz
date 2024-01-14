@@ -79,7 +79,11 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
 - Choices.js passed through the [JShint](https://jshint.com/) without any errors, only a warning about the choices variable being unused, this is being accessed however by some parts of the code in the Script.js file .
 
 ### *Unfixed Bugs* 
+- This bug occurs when the area that includes the buttons in it is clicked and can only be reset upon refreshing the page.
+- The frequency of it however is rare and it only happened to me when I purposefully tried to click slightly next to the buttons to see whether this would happen.
+- I have tried to fix this bug however when I was changing the event listener to be assigned to each button indivicually the code would break and it would not check the answer as it nomrally does. It would also not bring the Next button on display making it impossible for the game to progress towards the end.
 
+![Multiple Choices Area](assets/images/unfixed-bug.png)
 
 ## **Repository and Workspace Set Up**
 -  Creating a repository on Github.com:
