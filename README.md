@@ -23,10 +23,19 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
     - It outputs to the user the flag that was picked randomly out of the choices array.
     - It also, offers four possible answers with immediate validation (correct or incorrect answer).
     - At the bottom of the page is displayed the currect player score.
-    
-![Gameplay Area](assets/images/gameplay-area.png)
-- __The Footer__
 
+![Gameplay Area](assets/images/gameplay-area.png)
+
+- __Result Screen__
+- The result screen:
+    - Announces the final result of the game.
+    - Offers the user two options for exiting or restarting the game.
+
+![Result Screen](assets/images/result-screen.png)
+
+- __Exit Screen__
+
+![Exit Screen](assets/images/exit-screen.png)
 - __Styling Choices__
 
 ![Footer with Social Media links]
