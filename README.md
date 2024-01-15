@@ -3,7 +3,7 @@ Countries of the World is an interactive quiz game that presents to the user a r
 
 The live site can be found [here](https://alexiou981.github.io/countries-of-the-world-quiz/)
 
-![Landing Page](assets/images/am-i-responsive.png)
+![Landing Page](assets/images/readme-media/am-i-responsive.png)
 
 ## **Features**
 ### *Existing Features*
@@ -15,7 +15,7 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
     - The start button that runs the game.
     - The footer that consists of the clickable social media links, the purpose of the game and credits to the creator.
 
-    ![Landing Page](assets/images/landing-screen.png)
+    ![Landing Page](assets/images/readme-media/landing-screen.png)
 
 - __Gameplay Area__
 - The gameplay area consists of:
@@ -24,18 +24,18 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
     - It also, offers four possible answers with immediate validation (correct or incorrect answer).
     - At the bottom of the page is displayed the current player score.
 
-![Gameplay Area](assets/images/gameplay-area.png)
+![Gameplay Area](assets/images/readme-media/gameplay-area.png)
 
 - __Result Screen__
 - The result screen:
     - Announces the final result of the game.
     - Offers the user two options for exiting or restarting the game.
 
-![Result Screen](assets/images/result-screen.png)
+![Result Screen](assets/images/readme-media/result-screen.png)
 
 - __Exit Screen__
 
-![Exit Screen](assets/images/exit-screen.png)
+![Exit Screen](assets/images/readme-media/exit-screen.png)
 
 - __Styling Choices__
 
@@ -45,14 +45,14 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
 
     - There is sufficient contrast between background and foreground to enhance readability.
 
-![Color Palette](assets/images/color-palette.png)
+![Color Palette](assets/images/readme-media/color-palette.png)
 
 - __Typography__
 
 - The font used for this game is Permanent Marker and was taken from Google Fonts.
 - I chose this specific family since I wanted to give it a school-like type of writing since it's an educational game.
 
-![Typography](assets/images/typography.png)
+![Typography](assets/images/readme-media/typography.png)
 
 ### *Potential Future Features*
 
@@ -67,7 +67,8 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
 - This mockup was created using [Lucidchart](https://lucid.co/).
 - I made it as simple as possible and I have used it as a map through the process of completing this quiz game project.
 
-![Mockup](assets/images/mockup.png)
+![Mockup](assets/images/readme-media/mockup.png)
+
 ## **Testing**
 
 - The website was tested through various devices and proven to be responsive in all screen sizes using the Google Chrome Inspector.
@@ -89,7 +90,7 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
 - The frequency of it however rare would still cause a bad user experience since not only it turned the entire background color of the area red but it would also consider it as a wrong answer, when in reality there was no answer chosen at all.
 - That was fixed by setting the pointer-events to none for the container that includes the buttons and setting the pointer-events to all for the buttons in CSS.
 
-![Multiple Choices Area](assets/images/fixed-bug.png)
+![Multiple Choices Area](assets/images/readme-media/fixed-bug.png)
 
 ### *Unfixed Bugs*
 - Not applicable.
@@ -124,8 +125,8 @@ The website was deployed using Github.com.
     
 ## **Credits**
 ### *Content*
-- As a guide for creating this game in JavaScript I have used [W3Schools](https://www.w3schools.com/)
-- Material from the Javascript essentials module at Code Institure.
+- As a guide for creating this game in JavaScript I have used [W3Schools](https://www.w3schools.com/) and [MDN](https://developer.mozilla.org/en-US/)
+- Material from the Javascript essentials module at Code Institute.
 - Mentoring, guidance and advice from my mentor [Lauren-Nicole](https://github.com/CluelessBiker)
 - Any borrowed code from external sources has been mentioned in the code.
 ### *Media* 
