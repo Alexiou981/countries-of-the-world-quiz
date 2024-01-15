@@ -215,7 +215,7 @@ function restart() {
 }
 
 /**
- * Hides elemnts of gameplay area and shows thank you message
+ * Hides elements of gameplay area and shows thank you message
  */
 function exit() {
   document.getElementById("footer").style.display = "flex";
