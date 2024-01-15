@@ -87,7 +87,7 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
 
 ### *Fixed Bugs* 
 - This bug occurred when the area that includes the buttons in it was clicked and could only be reset upon refreshing the page.
-- The frequency of it however rare would still cause a bad user experience since not only it turned the entire background color of the area red but it would also consider it as a wrong answer, when in reality there was no answer chosen at all.
+- The frequency of it however rare would still cause a bad user experience since not only it turned the entire background color of the area red but it would also consider it as a wrong answer, when in reality there was no answer chosen at all. Also, the bakcground would turn red and stay like this unless the page was refreshed.
 - That was fixed by setting the pointer-events to none for the container that includes the buttons and setting the pointer-events to all for the buttons in CSS.
 
 ![Multiple Choices Area](assets/images/readme-media/fixed-bug.png)
@@ -108,7 +108,7 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
 - Creating a workspace on Codeanywhere.com:
     - Login to your account, in this case, I logged in using my GitHub account.
     - On the workspaces tab click on the "New Workspace".
-    - Go back to your Github repositories page and find the repository you want to create a workspace for, in this case, sourdough-enthusiasts.
+    - Go back to your Github repositories page and find the repository you want to create a workspace for, in this case, "countries-of-the-world-quiz".
     - Click on the repository and inside of it at the top right-hand corner there is a button that says "Code".
     - Click on the code button and copy the https URL from it.
     - Paste this URL in code anywhere inside the "Create from your project repository" field.
