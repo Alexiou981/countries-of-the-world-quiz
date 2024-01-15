@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,36 +21,30 @@
     <!-- Quiz Game Title -->
     <title>Countries of The World</title>
 </head>
-
 <body>
+    <!-- Header -->
     <header>
         <!-- Heading of the game -->
         <h1 id="heading">Countries of the World</h1>
     </header>
+    <!-- Main Content -->
     <main>
-
         <!-- Flag Section -->
-
         <div id="flag-container">
             <div id="landing-flag"></div>
             <img id="random-flag" src="assets/images/flags/algeria.png" alt="Random country flag">
         </div>
-        <!-- Clickable button that allows the user to begin the quiz-->
         <p style="font-size: 150%" id="exit-message">THANKS FOR PLAYING THE GAME</p>
+        <!-- Clickable buttons that allows the user to begin the quiz and proceed to next question-->
         <button onclick="startGame()" id="start-game-btn">START GAME</button>
         <button onclick="nextQuestion()" id="next-flag-btn">NEXT</button>
-
-        <!-- Main Game Area that displays a multiple choice for the user to pick the right answer-->
-
+        <!-- Gameplay Area consists of the question counter, flag, possible answers and the score counter -->
         <div id="gameplay-area">
-
             <!-- Question Counter  -->
             <p id="question">Which country is this?</p>
             <div id="counter-area">
                 <h3>Question: <span id="question-counter">1</span>/10</h3>
-
             </div>
-            <!-- Main game area, includes multiple choices, score area, resulsts and end of game buttons-->
             <div id="main-game-area">
                 <div id="multiple-choices">
                     <button id="option1">GREECE</button>
@@ -59,28 +52,28 @@
                     <button id="option3">ALBANIA</button>
                     <button id="option4">PLANET EARTH</button>
                 </div>
+                <!-- The final results only appears on the screen upon having selected the final answer -->
                 <div id="result"></div>
             </div>
+            <!-- The rematch and exit buttons only appear on the screen after having selected the final answer-->
             <div id="end-of-game-btns">
                 <button onclick="restart()" id="rematch">REMATCH</button>
                 <button onclick="exit()" id="exit">EXIT</button>
             </div>
-
-            <!-- Player Score Area, outputs the current score to the user-->
-
+            <!-- Player score area, outputs the current score to the user-->
             <div id="player-score-area">
                 <h3>CORRECT ANSWERS:<span id="correct-answers"> 0</span></h3>
                 <h3> INCORRECT ANSWERS:<span id="wrong-answers"> 0</span></h3>
             </div>
         </div>
     </main>
-
     <!-- Footer -->
     <footer id="footer">
         <div id="footer-container">
             <p id="footer-purposes">This quiz game was made for educational purposes</p>
             <p>Created and deployed on github by <br> Evangelos Alexiou</p>
             <p>Social Media:</p>
+            <!-- Clickable icons with external links to GitHub and LinkedIn -->
             <div id="sm-links">
                 <a href="https://github.com/Alexiou981" target="_blank" rel="noopener"
                     aria-label="Visit my page on Github(Opens in a new page)">
@@ -96,5 +89,4 @@
     <script src="assets/js/choices.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>
