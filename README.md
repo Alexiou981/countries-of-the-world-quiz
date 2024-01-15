@@ -87,7 +87,7 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
 
 ### *Fixed Bugs* 
 - This bug occurred when the area that includes the buttons in it was clicked and could only be reset upon refreshing the page.
-- The frequency of it however rare would still cause a bad user experience since not only it turned the entire background color of the area red but it would also consider it as a wrong answer, when in reality there was no answer chosen at all. Also, the bakcground would turn red and stay like this unless the page was refreshed.
+- The frequency of it however rare would still cause a bad user experience since not only it turned the entire background color of the area red but it would also consider it as a wrong answer, when in reality there was no answer chosen at all. Also, the background color would turn red and stay like this unless the page was refreshed.
 - That was fixed by setting the pointer-events to none for the container that includes the buttons and setting the pointer-events to all for the buttons in CSS.
 
 ![Multiple Choices Area](assets/images/readme-media/fixed-bug.png)
