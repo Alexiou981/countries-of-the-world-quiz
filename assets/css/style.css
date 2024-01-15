@@ -11,7 +11,7 @@ html {
   justify-content: center;
 }
 
-/* Sets header's font size */
+/* Sets headers font size */
 header {
   font-size: 70%;
 }
@@ -37,11 +37,9 @@ button {
 }
 
 /* Specific styling for option buttons only */
-
 #multiple-choices>button {
   height: 25vh;
   color: rgb(34, 85, 152);
-
 }
 
 /* Sets display of the gameplay area on the landing page to be none */
@@ -50,7 +48,6 @@ button {
 }
 
 /* Style rules for flag conatiner, landing flag and randomly picked flag */
-
 #flag-container {
   min-height: 25vh;
   width: 100%;
@@ -123,7 +120,6 @@ p {
   position: relative;
   font-size: 80%;
   padding-top: 2%;
-
 }
 
 /* Styling for result screen at the end of the game */
