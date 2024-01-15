@@ -78,12 +78,15 @@ The live site can be found [here](https://alexiou981.github.io/countries-of-the-
 - Script.js passed through the [JShint](https://jshint.com/) without any errors, only a warning about unused variables (startGame, nextQuestion, restart and exti), all of which are being used as an onclick="" in HTML.
 - Choices.js passed through the [JShint](https://jshint.com/) without any errors, only a warning about the choices variable being unused, this is being accessed however by some parts of the code in the Script.js file .
 
-### *Unfixed Bugs* 
-- This bug occurs when the area that includes the buttons in it is clicked and can only be reset upon refreshing the page.
-- The frequency of it however is rare and it only happened to me when I purposefully tried to click slightly next to the buttons to see whether this would happen.
-- I have tried to fix this bug however when I was changing the event listener to be assigned to each button indivicually the code would break and it would not check the answer as it nomrally does. It would also not bring the Next button on display making it impossible for the game to progress towards the end.
+### *Fixed Bugs* 
+- This bug occured when the area that includes the buttons in it is clicked and could only be reset upon refreshing the page.
+- The frequency of it however rare it would still cause a bad user experience since not only it turned the entire background color of the area red but it would also consider it as a wrong answer, when in reality there was no answer chosen at all.
+- That was fixed by setting the pointer events to none for the container that includes the buttons and setting the pointer events to all for the buttons in css.
 
-![Multiple Choices Area](assets/images/unfixed-bug.png)
+![Multiple Choices Area](assets/images/fixed-bug.png)
+
+### *Fixed Bugs*
+- Not applicable
 
 ## **Repository and Workspace Set Up**
 -  Creating a repository on Github.com:
