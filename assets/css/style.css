@@ -150,7 +150,7 @@ p {
 
 #footer-container>#sm-links {
   position: static;
-  font-size: 100%;
+  font-size: 150%;
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
