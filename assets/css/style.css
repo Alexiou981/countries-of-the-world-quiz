@@ -28,11 +28,11 @@ main {
 
 /* Styling for all buttons of the game */
 button {
+  pointer-events: all;
   font-size: 100%;
   font-family: Permanent Marker, sans-serif;
   color: rgb(58, 176, 40);
   border-radius: 40%;
-  opacity: 85%;
   box-shadow: 2px 4px rgba(0, 0, 0, 0.261);
 }
 
@@ -108,11 +108,13 @@ p {
 }
 
 #multiple-choices {
+  pointer-events: none;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   flex-grow: 1;
+  border-radius: 50%;
 }
 
 #player-score-area {
