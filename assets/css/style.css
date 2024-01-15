@@ -114,7 +114,6 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   flex-grow: 1;
-  border-radius: 50%;
 }
 
 #player-score-area {
